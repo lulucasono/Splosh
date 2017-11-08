@@ -4,23 +4,19 @@
 int main(void)
 {
 	int capacity;
-    int things[MAX_THINGS];
-    int nbThings;
-    int j;
+	int things[MAX_THINGS];
+	int nbThings;
+	int j;
 	int max = 0;
-    nbThings=0;
-    scanf("%d",&capacity);
-    while(1)
+	nbThings=0;
+	scanf("%d",&capacity);
+	int in;
+	do
 	{
-        int in;
-        scanf("%d",&in);
-        if(in<0)
-		{
-            break;
-        }
-        things[nbThings]=in;
-        nbThings++;
-    }
+		scanf("%d",&in);
+		things[nbThings]=in;
+		nbThings++;
+	}while(in<0);
     int T[MAX_WEIGHT];
     int i;
     for(i=0;i<=capacity;i++)
